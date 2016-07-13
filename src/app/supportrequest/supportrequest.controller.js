@@ -2,7 +2,9 @@ angular
     .module('SupportRequest.UI')
     .controller('SupportRequestController', SupportRequestController);
 
-  /** @ngInject */
+  // Dependency Injection  
+  SupportRequestController.$inject = ['$log'];
+
   function SupportRequestController($log) {
     var vm = this;
     

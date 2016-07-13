@@ -36,6 +36,11 @@ A module is a collection of services, directives, controllers, filters, and conf
 
 // Controller
 
+Factories aka Services
+
+Business logic should live in services, not controllers. Move any business logic in a controller to a service. When moving business logic 
+from a controller to a service you allow for reuse of business logic from other controllers or other services.
+
 Dependency injection
 This is one of Angular's best patterns. It makes testing much simpler. DI makes it more clear and succinct
 in determining what any particular object depends on.
